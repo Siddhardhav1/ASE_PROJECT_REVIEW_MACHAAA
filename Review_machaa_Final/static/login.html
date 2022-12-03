@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Movie Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Auto Complete -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="login.css">
+
+  <script type="text/javascript">
+    var films = { suggestions, tojson};
+    $(document).ready(function () {
+      $("#myModal").modal('show');
+    });
+
+    function aboutUs() {
+      $("#myModalAbout").modal('show');
+
+    }
+
+
+  </script>
+
+
+  </script>
+
+</head>
+
+<body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
+  <div class="body-content">
+    <div class="ml-container" style="display: block;">
+      <a class="social-icons" href="http://127.0.0.1:5000/"><i onclick="aboutUs()" class="fa fa-home" style="font-size: 40px;
+      color: red;
+      margin-left: 20px;
+      margin-top: 20px;"></i></a>
+      <a class="social-icons"><i class="fa fa-user" style="font-size: 40px;
+        color: red;
+        margin-right: 20px;
+        margin-top: 20px;
+        float: right;cursor: pointer;"></i></a>
+      <a class="social-icons" onclick="aboutUs()"><i class="fa fa-info" style="font-size: 40px;
+          color: red;
+          margin-right: 20px;
+          margin-top: 20px;
+          float: right;cursor: pointer;"></i></a>
+      <center class="cursor:pointer;">
+        <h1 class="app-title" style="    cursor: pointer;">The Movie Cinema</h1>
+      </center>
+
+
+      <div class="showcase-content">
+        <div class="formm">
+          <form>
+            <h1>Sign In</h1>
+            <div class="info">
+              <input class="email" type="email" placeholder="Email or phone number"> <br>
+              <input class="email" type="password" placeholder="Password">
+            </div>
+            <div class="btn">
+              <button class="btn-primary" type="submit">Sign In</button>
+            </div>
+            <div class="help">
+              <div>
+                <input value="true" type="checkbox"><label>Remember me</label>
+              </div>
+
+              <a href="">Need Help ?</a>
+
+            </div>
+
+          </form>
+
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+    <div id="loader" class="text-center">
+    </div>
+
+
+
+    <div class="results">
+      <center>
+        <h2 id="name" class="text-uppercase"></h2>
+      </center>
+    </div>
+
+
+    <div class="modal fade" id="myModalAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+      aria-hidden="true">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #e50914;color: white;">
+            <h5 class="modal-title" id="exampleModalLabel3">Hey there!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="color: white">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>While watching movies is enjoyable, choosing which one to watch next may be stressful. Does this scenario
+              sound similar to you? You waste half an hour browsing endlessly through Netflix, viewing trailers on
+              YouTube, checking IMDb ratings, and you still can't decide what to watch.
+              If so, you have come to the right place. What movie should I watch? is a question that can be answered by
+              PickAMovieForMe's movie suggestion engine! Your movie options are about to get a lot easier.</p>
+          </div>
+          <div class="modal-footer" style="text-align: center;">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Let's go!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" style="background-color: none;">
+      <br />
+      <div class="social" style="margin-bottom: 8px">
+        <a class="social-icons" href="https://github.com/" target="_blank"><i class="fa fa-github-alt"
+            style="font-size:24px;color: #e4e0e0"></i></a>
+        <a class="social-icons" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"
+            style="font-size:24px;color: #e4e0e0"></i></a>
+        <a class="social-icons" href="https://www.quora.com/" target="_blank"><i class="fa fa-quora"
+            style="font-size:24px;color: #e4e0e0"></i></a>
+        <a class="social-icons" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+            style="font-size:24px;color: #e4e0e0"></i></a>
+        <a class="social-icons" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"
+            style="font-size:24px;color: #e4e0e0"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='autocomplete.js')}}"></script>
+
+  <script type="text/javascript" src="{{url_for('static', filename='recommend.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
